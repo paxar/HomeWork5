@@ -36,6 +36,7 @@
     width: 1200px;
     margin: 0 auto;
     border: 1px dotted green;
+    background: linear-gradient(to bottom, #e0e5e8 0%,#e2e8e8 5%,#e7ebec 9%,#eeeff1 14%,#fefefe 49%);
 }
 
 .clearfix::after {
@@ -51,8 +52,26 @@ header,
 main,
 footer {
     width: 780px;
+    margin: 0 auto;
     border: 1px dotted red;
 
+}
+
+.logo {
+    /*display: block;*/
+}
+.logo img {
+    float: left;
+}
+.slogan {
+    width: 75px;
+    display: block;
+    float: left;
+    margin-top: 15px;
+}
+.logo h1 {
+    float: right;
+    font-size: 15px;
 }
 
 aside {
