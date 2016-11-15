@@ -1,0 +1,13 @@
+/*dt, dd { display: inline;}*/
+
+dt, dd {
+    border: 1px solid black;
+}
+dt {
+    float: left;
+    width: 150px;
+}
+
+dd {
+    margin: 0;
+}
