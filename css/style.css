@@ -56,6 +56,46 @@ footer {
     border: 1px dotted red;
 
 }
+.auth ul {
+    margin: 0;
+}
+.auth li {
+    float: right;
+    list-style: none;
+    height: 38px;  /*  testing*/
+
+
+
+}
+
+.auth a {
+    font-family: ArialMT;
+    font-style: normal;
+    font-size: 12px;
+    text-decoration: none;
+
+}
+.auth-login {
+    width: 60px;
+    background-color: white;
+    padding: 0 5px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.auth-register {
+    width: 100px;
+    background-color: white;
+    padding: 0 5px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+
+.auth-register a {
+    border-right: 1px solid gray;
+}
+
 
 .logo {
     /*display: block;*/
@@ -98,3 +138,6 @@ dd {
     margin: 0;
 }
 
+/*----------------*/
+
+/*   http://htmler.ru/2014/10/21/css-transition-css3/     background gray-> color    */
