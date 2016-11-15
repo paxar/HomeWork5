@@ -1,4 +1,20 @@
-/*dt, dd { display: inline;}*/
+
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px dotted green;
+}
+
+header,
+main,
+footer {
+    width: 780px;
+    border: 1px dotted red;
+
+}
+
+
 
 dt, dd {
     border: 1px solid black;
@@ -11,3 +27,4 @@ dt {
 dd {
     margin: 0;
 }
+
