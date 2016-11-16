@@ -53,8 +53,10 @@ main,
 footer {
     width: 780px;
     margin: 0 auto;
-    border: 1px dotted red;
 
+    /*Testing options*/
+    /*border: 1px dotted red;*/
+    margin-bottom: 10px;
 }
 /*-------------------HEADER-----------------------------*/
 /*----------------header-auth----------------------*/
@@ -68,7 +70,7 @@ footer {
     float: right;
     list-style: none;
     /*height: 38px;  !*  testing*!*/
-    margin-top: -18px;
+    margin-top: -14px;
     padding-bottom: 7px;
 }
 
@@ -122,17 +124,75 @@ footer {
     font-size: 21px;
     font-weight: bold;
     letter-spacing: 1px;
+    line-height: 22px;
     color: #939598;
 }
 
 
-
-
-
-
 .logo h1 {
     float: right;
+    margin-top: 18px;
+    margin-right: 27px;
+    color: #646464;
+    font-family: Helios;
     font-size: 15px;
+    font-weight: bold;
+
+}
+
+/*--------------header-nav--------------*/
+.nav {
+    /*border-bottom: 1px solid #939598;*/
+
+}
+li.nav-main {
+    border-top-left-radius: 23px;
+    border-bottom-color: transparent;
+}
+
+.nav-targets {
+
+}
+
+.nav-companies {
+    border-top-right-radius: 23px;
+}
+
+.nav ul::before {
+    border-bottom: 1px solid #939598;
+}
+.nav ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+    margin-right: 10px;
+    margin-bottom: -1px;
+}
+.nav li::before {
+    border-bottom: 1px solid #939598;
+}
+
+.nav-main,
+.nav-targets,
+.nav-companies {
+    /*float: right;*/
+    width: 130px;
+    display: inline-block;
+    padding: 12px 0;
+    border: 1px solid #939598;
+    text-align: center;
+    margin-left: -1px;
+
+}
+
+.nav a {
+    /*width: 56px;*/
+
+    color: #45b8fb;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
 }
 
 /*---------------------MAIN------------------------------*/
