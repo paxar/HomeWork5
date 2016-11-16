@@ -56,7 +56,7 @@ footer {
 
     /*Testing options*/
     /*border: 1px dotted red;*/
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
 }
 /*-------------------HEADER-----------------------------*/
 /*----------------header-auth----------------------*/
@@ -204,14 +204,71 @@ li.nav-main {
     text-decoration: none;
 }
 
-/*---------------------MAIN------------------------------*/
+/*----------------------------------------MAIN-------------------------------------------*/
 
+/*----------sidebar styles--------------------*/
 
 aside {
     width: 230px;
     float: left;
+}
+
+.sidebar h2 {
+    color: #03a7fe;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.sidebar h2::after {
+    content: url("../pic/arrow-down.png");
+    padding-left: 10px;
+}
+
+.sidebar ul {
+    /*list-style-image: url("../pic/arrow.png");*/
+    padding-left: 0;
+}
+
+.sidebar li {
+    border-bottom: 1px solid #c3c4c3;
+    display: block;
+}
+.sidebar li::before {
+    content: url("../pic/arrow.png");
+    padding-right: 10px;
+}
+
+.sidebar li:last-child {
+    border-bottom: none;
+}
+
+.sidebar li a {
+    color: #555;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+    text-decoration: none;
+}
+.rss {
+    display: block;
+    border-top: 1px solid #c3c4c3;
+    border-bottom: 1px solid #c3c4c3;
+}
+.sidebar .rss img  {
+    margin: 15px auto;
+}
+
+.sidebar>a img {
+    display: block;
+    margin: 23px auto;
 
 }
+
+
+/*-----------------content styles------------------------*/
 
 .content {
     float: right;
@@ -230,6 +287,17 @@ dt {
 dd {
     margin: 0;
 }
+/*----------------footer------------------------------------------------*/
+footer span{
+    font-family: Arial;
+    font-size: 10px;
+    font-weight: 400;
+    color: #78797b;
+}
+footer span a {
+    color: black;
+}
+
 
 /*----------------*/
 
