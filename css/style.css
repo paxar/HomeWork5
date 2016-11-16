@@ -142,12 +142,24 @@ footer {
 
 /*--------------header-nav--------------*/
 .nav {
-    /*border-bottom: 1px solid #939598;*/
+    border-bottom: 1px solid #939598;
 
 }
+
+li.active-tab {
+    background: linear-gradient(to bottom, rgba(255,255,255,0.99) 0%,rgba(255,255,255,1) 9%,rgba(255,255,255,0.92) 23%,rgba(255,255,255,0.67) 62%,rgba(255,255,255,0.08) 91%,rgba(255,255,255,0.01) 100%);
+    border-bottom-color: #EFF0F2;
+
+
+}
+
+li.active-tab a {
+    color: #45b8fb;
+}
+
 li.nav-main {
     border-top-left-radius: 23px;
-    border-bottom-color: transparent;
+
 }
 
 .nav-targets {
@@ -158,19 +170,15 @@ li.nav-main {
     border-top-right-radius: 23px;
 }
 
-.nav ul::before {
-    border-bottom: 1px solid #939598;
-}
+
 .nav ul {
     list-style: none;
     float: right;
     margin: 0;
-    margin-right: 10px;
+    margin-right: 20px;
     margin-bottom: -1px;
 }
-.nav li::before {
-    border-bottom: 1px solid #939598;
-}
+
 
 .nav-main,
 .nav-targets,
@@ -182,13 +190,14 @@ li.nav-main {
     border: 1px solid #939598;
     text-align: center;
     margin-left: -1px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(179,153,128,0.04) 61%,rgba(170,149,128,0.05) 64%,rgba(170,153,136,0.06) 66%,rgba(165,150,135,0.07) 68%,rgba(166,153,128,0.08) 70%,rgba(162,151,127,0.09) 73%,rgba(163,143,133,0.09) 75%,rgba(164,146,128,0.1) 77%,rgba(165,150,135,0.13) 82%,rgba(165,145,131,0.14) 84%,rgba(168,149,131,0.15) 86%,rgba(168,145,133,0.17) 89%,rgba(165,145,130,0.2) 93%,rgba(167,145,132,0.23) 98%,rgba(0,0,0,0) 100%);
 
 }
 
 .nav a {
     /*width: 56px;*/
 
-    color: #45b8fb;
+    color: #939598;
     font-family: Arial;
     font-size: 16px;
     font-weight: 400;
