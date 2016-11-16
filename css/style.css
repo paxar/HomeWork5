@@ -37,6 +37,7 @@
     margin: 0 auto;
     border: 1px dotted green;
     background: linear-gradient(to bottom, #e0e5e8 0%,#e2e8e8 5%,#e7ebec 9%,#eeeff1 14%,#fefefe 49%);
+    /*todo  replace this sux gradient*/
 }
 
 .clearfix::after {
@@ -288,7 +289,26 @@ dd {
     margin: 0;
 }
 /*----------------footer------------------------------------------------*/
+footer {
+    border-top: 1px solid #b5b5b7;
+    margin-bottom: 20px;
+}
+
+footer div {
+    width: 478px;
+    float: right;
+    padding: 6px 10px 6px 12px;
+    margin-right: 25px;
+    background-color: #d9dada;
+    /*margin: 10px 0;*/
+    border-bottom-right-radius: 13px;
+    border-bottom-left-radius: 13px;
+
+}
+
 footer span{
+
+    /*padding-left: 12px;*/
     font-family: Arial;
     font-size: 10px;
     font-weight: 400;
@@ -296,6 +316,14 @@ footer span{
 }
 footer span a {
     color: black;
+    text-decoration: none;
+}
+
+footer img {
+    float: right;
+    display: block;
+
+
 }
 
 
