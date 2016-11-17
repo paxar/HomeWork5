@@ -255,6 +255,7 @@ aside {
 }
 .rss {
     display: block;
+    margin-top: 40px;
     border-top: 1px solid #c3c4c3;
     border-bottom: 1px solid #c3c4c3;
 }
@@ -274,7 +275,40 @@ aside {
 .content {
     float: right;
     width: 530px;
+    margin-top: 50px;
 }
+
+/*--------------MAIN  article tab-----------------------------*/
+
+.content article {
+    padding: 0;
+    font-family: ArialMT;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 17px;
+
+}
+.content h2 {
+    margin-top: 15px;
+    margin-bottom: 2px;
+    padding-bottom: 17px;
+    font-size: 30px;
+    font-weight: normal;
+    border-bottom: 1px solid blue;
+
+}
+
+.article-header {
+
+}
+
+.article-footer {
+
+}
+
+
+
+/*------------------------------------------------------------*/
 
 dt, dd {
     border: 1px solid black;
