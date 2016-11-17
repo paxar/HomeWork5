@@ -275,7 +275,7 @@ aside {
 .content {
     float: right;
     width: 530px;
-    margin-top: 50px;
+    margin-top: 24px;
 }
 
 /*--------------MAIN  article tab-----------------------------*/
@@ -288,22 +288,35 @@ aside {
     line-height: 17px;
 
 }
+
+
 .content h2 {
-    margin-top: 15px;
+    margin-top: 42px;
     margin-bottom: 2px;
     padding-bottom: 17px;
     font-size: 30px;
     font-weight: normal;
-    border-bottom: 1px solid blue;
+    border-bottom: 1px solid #00a7fb;
 
+}
+.content a {
+    color: #13a7f5;
 }
 
 .article-header {
+    margin-bottom: 19px;
 
+}
+.article-header-date {
+    float: right;
 }
 
 .article-footer {
+    margin-top: 14px;
+}
 
+.article-footer img {
+    vertical-align: text-top;
 }
 
 
