@@ -378,7 +378,21 @@ aside {
 dt, dd {
     /*border: 1px solid black;*/
     padding: 5px;
+    background-color: #dfe5e6;
+    /*display: block;*/
 }
+
+dt:nth-of-type(even),
+dd:nth-of-type(even){
+    background-color: #eceff1;
+}
+
+dt:nth-last-of-type(n+6),
+dd:nth-last-of-type(n+6){
+    background-color: #dfe5e6;
+    border-bottom: 2px solid white;
+}
+
 
 dt {
     float: left;
@@ -386,7 +400,8 @@ dt {
 }
 
 dd {
-    margin: 0;
+    /*float: right;*/
+    /*margin: 0;*/
 }
 
 
