@@ -35,9 +35,9 @@
 .wrapper {
     width: 1200px;
     margin: 0 auto;
-    border: 1px dotted green;
-    background: linear-gradient(to bottom, #e0e5e8 0%,#e2e8e8 5%,#e7ebec 9%,#eeeff1 14%,#fefefe 49%);
-    /*todo  replace this sux gradient*/
+    /*border: 1px dotted green;*/
+    background: linear-gradient(to bottom, #ced8d9 0%,#e4e9ea 6%,#ffffff 36%,#ffffff 100%);
+
 }
 
 .clearfix::after {
@@ -149,7 +149,7 @@ footer {
 
 li.active-tab {
     background: linear-gradient(to bottom, rgba(255,255,255,0.99) 0%,rgba(255,255,255,1) 9%,rgba(255,255,255,0.92) 23%,rgba(255,255,255,0.67) 62%,rgba(255,255,255,0.08) 91%,rgba(255,255,255,0.01) 100%);
-    border-bottom-color: #EFF0F2;
+    border-bottom-color: #E9EDEE;
 
 
 }
@@ -330,7 +330,7 @@ aside {
 }
 
 .article-goals h2 {
-    margin-top: 42px;
+    margin-top: 39px;
     margin-bottom: 2px;
     padding-bottom: 17px;
     font-size: 28px;
@@ -338,7 +338,6 @@ aside {
     border-bottom: 1px solid #00a7fb;
 
 }
-
 
 .article-goals img {
 
@@ -353,20 +352,45 @@ aside {
 
 
 
-/*------------------------------------------------------------*/
+/*-----------------MAIN section companies-------------------------------------------*/
+.section-companies {
+    border:1px dotted lightblue;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: 400;
+    
+}
 
+.section-companies img {
+    float: left;
+
+}
+.section-companies h3 {
+    /*float: right;*/
+    
+}
+.section-companies dl {
+    float: right;
+    width: 393px;
+    margin: 0;
+    
+}
 dt, dd {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
+    padding: 5px;
 }
 
 dt {
     float: left;
-    width: 50px;
+    width: 219px;
 }
 
 dd {
     margin: 0;
 }
+
+
+
 /*----------------footer------------------------------------------------*/
 footer {
     border-top: 1px solid #b5b5b7;
