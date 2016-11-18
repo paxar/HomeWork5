@@ -353,8 +353,17 @@ aside {
 
 
 /*-----------------MAIN section companies-------------------------------------------*/
+.content h2 {
+    margin: 37px 0 9px 0;
+    font-family: Arial;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+
 .section-companies {
-    border:1px dotted lightblue;
+    margin-bottom: 20px;
+    border-top: 1px solid #00a7fb;
     font-family: Arial;
     font-size: 12px;
     font-weight: 400;
@@ -363,10 +372,16 @@ aside {
 
 .section-companies img {
     float: left;
+    margin: 18px 0 0 13px;
 
 }
 .section-companies h3 {
-    /*float: right;*/
+
+    margin: 10px 0 8px 133px;
+    color: #03a7fe;
+    font-family: Arial;
+    font-size: 22px;
+    font-weight: 400;
     
 }
 .section-companies dl {
@@ -375,34 +390,66 @@ aside {
     margin: 0;
     
 }
-dt, dd {
+.section-companies dt,
+.section-companies dd {
     /*border: 1px solid black;*/
-    padding: 5px;
+    padding: 6px 0 5px 0;
     background-color: #dfe5e6;
+
     /*display: block;*/
 }
 
-dt:nth-of-type(even),
-dd:nth-of-type(even){
+.section-companies dt {
+    float: left;
+    width: 219px;
+    padding-left: 7px;
+}
+
+.section-companies dt:nth-of-type(even),
+.section-companies dd:nth-of-type(even){
     background-color: #eceff1;
 }
 
-dt:nth-last-of-type(n+6),
-dd:nth-last-of-type(n+6){
+.section-companies dt:nth-last-of-type(n+6),
+.section-companies dd:nth-last-of-type(n+6){
     background-color: #dfe5e6;
-    border-bottom: 2px solid white;
+    border-bottom: 3px solid white;
+}
+
+.section-companies dd:nth-last-of-type(4) {
+    background-image: url("../pic/companies-icon-phone.png");
+    background-repeat: no-repeat;
+    margin-left: 226px;
+    background-position: left;
+    padding-left: 20px;
+}
+
+.section-companies dd:nth-last-of-type(3) {
+    background-image: url("../pic/companies-icon-skype.png");
+    background-repeat: no-repeat;
+    margin-left: 226px;
+    background-position: left;
+    padding-left: 20px;
+}
+
+.section-companies dd:nth-last-of-type(2) {
+    background-image: url("../pic/companies-icon-email.png");
+    background-repeat: no-repeat;
+    margin-left: 226px;
+    background-position: left;
+    padding-left: 20px;
+}
+
+.section-companies dd:nth-last-of-type(1) {
+    background-image: url("../pic/companies-icon-twitter.png");
+    background-repeat: no-repeat;
+    margin-left: 226px;
+    background-position: left;
+    padding-left: 20px;
 }
 
 
-dt {
-    float: left;
-    width: 219px;
-}
 
-dd {
-    /*float: right;*/
-    /*margin: 0;*/
-}
 
 
 
