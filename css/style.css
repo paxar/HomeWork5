@@ -175,9 +175,8 @@ li.nav-main {
 .nav ul {
     list-style: none;
     float: right;
-    margin: 0;
-    margin-right: 20px;
-    margin-bottom: -1px;
+    margin: 0 20px -1px 0;
+
 }
 
 
@@ -270,7 +269,8 @@ aside {
 }
 
 
-/*-----------------content styles------------------------*/
+
+/*----------------- section content styles------------------------*/
 
 .content {
     float: right;
@@ -290,11 +290,11 @@ aside {
 }
 
 
-.article-home h2 {
+article.article-home h2 {
     margin-top: 42px;
     margin-bottom: 2px;
     padding-bottom: 17px;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: normal;
     border-bottom: 1px solid #00a7fb;
 
@@ -329,7 +329,7 @@ aside {
     text-align: justify;
 }
 
-.article-goals h2 {
+article.article-goals h2 {
     margin-top: 39px;
     margin-bottom: 2px;
     padding-bottom: 17px;
@@ -354,7 +354,7 @@ aside {
 
 /*-----------------MAIN section companies-------------------------------------------*/
 .content h2 {
-    margin: 37px 0 9px 0;
+    margin: 37px 0 8px 0;
     font-family: Arial;
     font-size: 26px;
     font-weight: 400;
@@ -417,35 +417,40 @@ aside {
 }
 
 .section-companies dd:nth-last-of-type(4) {
-    background-image: url("../pic/companies-icon-phone.png");
-    background-repeat: no-repeat;
     margin-left: 226px;
-    background-position: left;
     padding-left: 20px;
+    background-color: #eceff1; /*IE fix*/
+    background: url("../pic/companies-icon-phone.png") no-repeat left;
+
+
 }
+
 
 .section-companies dd:nth-last-of-type(3) {
-    background-image: url("../pic/companies-icon-skype.png");
-    background-repeat: no-repeat;
     margin-left: 226px;
-    background-position: left;
     padding-left: 20px;
+    background-color: #dfe5e6; /*IE fix*/
+    background: url("../pic/companies-icon-skype.png") no-repeat left;
+
+
 }
 
+
 .section-companies dd:nth-last-of-type(2) {
-    background-image: url("../pic/companies-icon-email.png");
-    background-repeat: no-repeat;
     margin-left: 226px;
-    background-position: left;
     padding-left: 20px;
+    background-color: #eceff1; /*IE fix*/
+    background: url("../pic/companies-icon-email.png") no-repeat left;
+
+
 }
 
 .section-companies dd:nth-last-of-type(1) {
-    background-image: url("../pic/companies-icon-twitter.png");
-    background-repeat: no-repeat;
     margin-left: 226px;
-    background-position: left;
     padding-left: 20px;
+    background-color: #dfe5e6; /*IE fix*/
+    background: url("../pic/companies-icon-twitter.png") no-repeat left;
+
 }
 
 
