@@ -82,7 +82,9 @@ footer {
     text-decoration: none;
     display: block;
     margin-top: 18px;
-
+}
+.auth a:hover{
+    text-decoration: underline;
 }
 .auth-login {
     width: 60px;
@@ -203,6 +205,9 @@ li.nav-main {
     font-weight: 400;
     text-decoration: none;
 }
+.nav a:hover {
+    color: #45b8fb;
+}
 
 /*----------------------------------------MAIN-------------------------------------------*/
 
@@ -252,6 +257,11 @@ aside {
     line-height: 32px;
     text-decoration: none;
 }
+.sidebar li a:hover {
+    /*text-decoration: underline;*/
+    color: #45b8fb;
+}
+
 .rss {
     display: block;
     margin-top: 40px;
@@ -260,13 +270,34 @@ aside {
 }
 .sidebar .rss img  {
     margin: 15px auto;
+    filter: none ;
 }
 
-.sidebar>a img {
+
+
+.sidebar a img {
     display: block;
     margin: 23px auto;
-
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    /*transition test*/
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
 }
+
+.sidebar a img:hover {
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    -o-filter: none;
+    filter: none;
+}
+
 
 
 
@@ -299,9 +330,14 @@ article.article-home h2 {
     border-bottom: 1px solid #00a7fb;
 
 }
-.content a {
+.article-home a {
     color: #13a7f5;
 }
+
+.article-home a:hover {
+    color: #3f61ff;
+}
+
 
 .article-home-header {
     margin-bottom: 19px;
@@ -384,6 +420,16 @@ article.article-goals h2 {
     font-weight: 400;
     
 }
+
+.section-companies a {
+    text-decoration: none;
+    color: #13a7f5;
+}
+.section-companies a:hover {
+    text-decoration: underline;
+}
+
+
 .section-companies dl {
     float: right;
     width: 393px;
@@ -419,9 +465,8 @@ article.article-goals h2 {
 .section-companies dd:nth-last-of-type(4) {
     margin-left: 226px;
     padding-left: 20px;
-    background-color: #eceff1; /*IE fix*/
     background: url("../pic/companies-icon-phone.png") no-repeat left;
-
+    background-color: #eceff1; /*IE fix*/
 
 }
 
@@ -429,8 +474,8 @@ article.article-goals h2 {
 .section-companies dd:nth-last-of-type(3) {
     margin-left: 226px;
     padding-left: 20px;
-    background-color: #dfe5e6; /*IE fix*/
     background: url("../pic/companies-icon-skype.png") no-repeat left;
+    background-color: #dfe5e6; /*IE fix*/
 
 
 }
@@ -439,8 +484,8 @@ article.article-goals h2 {
 .section-companies dd:nth-last-of-type(2) {
     margin-left: 226px;
     padding-left: 20px;
-    background-color: #eceff1; /*IE fix*/
     background: url("../pic/companies-icon-email.png") no-repeat left;
+    background-color: #eceff1; /*IE fix*/
 
 
 }
@@ -448,8 +493,8 @@ article.article-goals h2 {
 .section-companies dd:nth-last-of-type(1) {
     margin-left: 226px;
     padding-left: 20px;
-    background-color: #dfe5e6; /*IE fix*/
     background: url("../pic/companies-icon-twitter.png") no-repeat left;
+    background-color: #dfe5e6; /*IE fix*/
 
 }
 
@@ -478,7 +523,7 @@ footer div {
 
 footer span{
 
-    /*padding-left: 12px;*/
+
     font-family: Arial;
     font-size: 10px;
     font-weight: 400;
@@ -487,6 +532,10 @@ footer span{
 footer span a {
     color: black;
     text-decoration: none;
+}
+
+footer a:hover {
+    color: #45b8fb;
 }
 
 footer img {
