@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'AFKlampenborg';
     src: url('../fonts/AFKlampenborg.eot') format('embedded-opentype'),
-    url('../fonts/AFKlampenborg.ttf')  format('truetype'),
+    url('../fonts/AFKlampenborg.ttf') format('truetype'),
     url('../fonts/AFKlampenborg.svg#AFKlampenborg') format('svg');
     font-weight: normal;
     font-style: normal;
@@ -10,33 +10,27 @@
 @font-face {
     font-family: 'Helios';
     src: url('../fonts/Helios.eot') format('embedded-opentype'),
-    url('../fonts/Helios.ttf')  format('truetype'),
+    url('../fonts/Helios.ttf') format('truetype'),
     url('../fonts/Helios.svg#Helios') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
-
-
 @font-face {
     font-family: 'ArialMT';
     src: url('../fonts/ArialMT.eot') format('embedded-opentype'),
-    url('../fonts/ArialMT.ttf')  format('truetype'),
+    url('../fonts/ArialMT.ttf') format('truetype'),
     url('../fonts/ArialMT.svg#ArialMT') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
-
-
-
-
-/*------------------------------------------------------*/
+/*-----------------------initial settings page -------------------------------*/
 .wrapper {
     width: 1200px;
     margin: 0 auto;
     /*border: 1px dotted green;*/
-    background: linear-gradient(to bottom, #ced8d9 0%,#e4e9ea 6%,#ffffff 36%,#ffffff 100%);
+    background: linear-gradient(to bottom, #ced8d9 0%, #e4e9ea 6%, #ffffff 36%, #ffffff 100%);
 
 }
 
@@ -46,51 +40,62 @@
     clear: both;
 }
 
+/*----------------------------settings page blocks---------------------------------------*/
 
-/*--------------------------------------------------------------------------------*/
 
 header,
 main,
 footer {
     width: 780px;
     margin: 0 auto;
-
-    /*Testing options*/
-    /*border: 1px dotted red;*/
-    /*margin-bottom: 10px;*/
 }
-/*-------------------HEADER-----------------------------*/
+
+aside {
+    float: left;
+    width: 230px;
+}
+
+.content {
+    float: right;
+    width: 530px;
+    margin-top: 24px;
+}
+
+/*-----------------------------------HEADER-----------------------------------------------------*/
 /*----------------header-auth----------------------*/
 .auth {
     margin-bottom: 23px;
 }
+
 .auth ul {
     margin: 0;
 }
+
 .auth li {
     float: right;
-    list-style: none;
-    /*height: 38px;  !*  testing*!*/
     margin-top: -14px;
     padding-bottom: 7px;
+    list-style: none;
 }
 
 .auth a {
+    display: block;
+    margin-top: 18px;
     font-family: Arial;
     font-style: normal;
     font-size: 11px;
     text-decoration: none;
-    display: block;
-    margin-top: 18px;
 }
-.auth a:hover{
+
+.auth a:hover {
     text-decoration: underline;
 }
+
 .auth-login {
     width: 60px;
-    background-color: white;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    background-color: white;
 }
 
 .auth-login a {
@@ -111,17 +116,16 @@ footer {
     padding-left: 25px;
 }
 
-/*----------- header-logotype + h1-------------- */
-.logo {
+/*----------- header + logotype+ slogan + h1-------------- */
 
-}
 .logo img {
     float: left;
 }
+
 .slogan {
+    float: left;
     width: 120px;
     display: block;
-    float: left;
     margin-top: 15px;
     font-family: AFKlampenborg;
     font-size: 21px;
@@ -131,29 +135,24 @@ footer {
     color: #939598;
 }
 
-
 .logo h1 {
     float: right;
     margin-top: 18px;
     margin-right: 27px;
-    color: #646464;
     font-family: Helios;
     font-size: 15px;
     font-weight: bold;
-
+    color: #646464;
 }
 
 /*--------------header-nav--------------*/
 .nav {
     border-bottom: 1px solid #939598;
-
 }
 
 li.active-tab {
-    background: linear-gradient(to bottom, rgba(255,255,255,0.99) 0%,rgba(255,255,255,1) 9%,rgba(255,255,255,0.92) 23%,rgba(255,255,255,0.67) 62%,rgba(255,255,255,0.08) 91%,rgba(255,255,255,0.01) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.99) 0%, rgba(255, 255, 255, 1) 9%, rgba(255, 255, 255, 0.92) 23%, rgba(255, 255, 255, 0.67) 62%, rgba(255, 255, 255, 0.08) 91%, rgba(255, 255, 255, 0.01) 100%);
     border-bottom-color: #E9EDEE;
-
-
 }
 
 li.active-tab a {
@@ -162,87 +161,72 @@ li.active-tab a {
 
 li.nav-main {
     border-top-left-radius: 23px;
-
-}
-
-.nav-goals {
-
 }
 
 .nav-companies {
     border-top-right-radius: 23px;
 }
 
-
 .nav ul {
-    list-style: none;
     float: right;
     margin: 0 20px -1px 0;
-
+    list-style: none;
 }
-
 
 .nav-main,
 .nav-goals,
 .nav-companies {
-    /*float: right;*/
     width: 130px;
     display: inline-block;
+    margin-left: -1px;
     padding: 12px 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, rgba(179, 153, 128, 0.04) 61%, rgba(170, 149, 128, 0.05) 64%, rgba(170, 153, 136, 0.06) 66%, rgba(165, 150, 135, 0.07) 68%, rgba(166, 153, 128, 0.08) 70%, rgba(162, 151, 127, 0.09) 73%, rgba(163, 143, 133, 0.09) 75%, rgba(164, 146, 128, 0.1) 77%, rgba(165, 150, 135, 0.13) 82%, rgba(165, 145, 131, 0.14) 84%, rgba(168, 149, 131, 0.15) 86%, rgba(168, 145, 133, 0.17) 89%, rgba(165, 145, 130, 0.2) 93%, rgba(167, 145, 132, 0.23) 98%, rgba(0, 0, 0, 0) 100%);
     border: 1px solid #939598;
     text-align: center;
-    margin-left: -1px;
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(179,153,128,0.04) 61%,rgba(170,149,128,0.05) 64%,rgba(170,153,136,0.06) 66%,rgba(165,150,135,0.07) 68%,rgba(166,153,128,0.08) 70%,rgba(162,151,127,0.09) 73%,rgba(163,143,133,0.09) 75%,rgba(164,146,128,0.1) 77%,rgba(165,150,135,0.13) 82%,rgba(165,145,131,0.14) 84%,rgba(168,149,131,0.15) 86%,rgba(168,145,133,0.17) 89%,rgba(165,145,130,0.2) 93%,rgba(167,145,132,0.23) 98%,rgba(0,0,0,0) 100%);
-
 }
 
 .nav a {
-    /*width: 56px;*/
     padding: 10px;
-    color: #939598;
     font-family: Arial;
     font-size: 16px;
     font-weight: 400;
     text-decoration: none;
+    color: #939598;
 }
+
 .nav a:hover {
     color: #45b8fb;
 }
 
 /*----------------------------------------MAIN-------------------------------------------*/
 
-/*----------sidebar styles--------------------*/
-
-aside {
-    width: 230px;
-    float: left;
-}
+/*------------------------sidebar------------------------------*/
 
 .sidebar h2 {
-    color: #03a7fe;
+    margin: 22px 0;
     font-family: Arial;
     font-size: 20px;
     font-weight: 400;
-    margin: 22px 0;
+    color: #03a7fe;
 }
 
 .sidebar h2::after {
-    content: url("../pic/arrow-down.png");
     padding-left: 10px;
+    content: url("../pic/arrow-down.png");
 }
 
 .sidebar ul {
-    /*list-style-image: url("../pic/arrow.png");*/
     padding-left: 0;
 }
 
 .sidebar li {
-    border-bottom: 1px solid #c3c4c3;
     display: block;
+    border-bottom: 1px solid #c3c4c3;
 }
+
 .sidebar li::before {
-    content: url("../pic/arrow.png");
     padding-right: 10px;
+    content: url("../pic/arrow.png");
 }
 
 .sidebar li:last-child {
@@ -250,15 +234,15 @@ aside {
 }
 
 .sidebar li a {
-    color: #555;
     font-family: Arial;
     font-size: 14px;
     font-weight: 400;
     line-height: 32px;
     text-decoration: none;
+    color: #555;
 }
+
 .sidebar li a:hover {
-    /*text-decoration: underline;*/
     color: #45b8fb;
 }
 
@@ -268,48 +252,27 @@ aside {
     border-top: 1px solid #c3c4c3;
     border-bottom: 1px solid #c3c4c3;
 }
-.sidebar .rss img  {
+
+.sidebar .rss img {
     margin: 15px auto;
-    filter: none ;
+    filter: none;
 }
-
-
 
 .sidebar a img {
     display: block;
     margin: 23px auto;
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
     filter: grayscale(100%);
     /*transition test*/
-    -webkit-transition: all 0.7s;
-    -moz-transition: all 0.7s;
-    -o-transition: all 0.7s;
     transition: all 0.7s;
 }
 
 .sidebar a img:hover {
-    -webkit-filter: none;
-    -moz-filter: none;
-    -ms-filter: none;
-    -o-filter: none;
     filter: none;
 }
 
-
-
-
 /*----------------- section content styles------------------------*/
 
-.content {
-    float: right;
-    width: 530px;
-    margin-top: 24px;
-}
-
-/*--------------MAIN  article tab-----------------------------*/
+/*--------------MAIN article tab home-----------------------------*/
 
 .article-home {
     padding: 0;
@@ -320,16 +283,15 @@ aside {
 
 }
 
-
 article.article-home h2 {
     margin-top: 42px;
     margin-bottom: 2px;
     padding-bottom: 17px;
+    border-bottom: 1px solid #00a7fb;
     font-size: 28px;
     font-weight: normal;
-    border-bottom: 1px solid #00a7fb;
-
 }
+
 .article-home a {
     color: #13a7f5;
 }
@@ -338,11 +300,10 @@ article.article-home h2 {
     color: #3f61ff;
 }
 
-
 .article-home-header {
     margin-bottom: 19px;
-
 }
+
 .article-home-header-date {
     float: right;
 }
@@ -355,7 +316,7 @@ article.article-home h2 {
     vertical-align: text-top;
 }
 
-/*-----------------MAIN  article goals------------------------*/
+/*-----------------MAIN  article tab goals--------------------------------*/
 
 .article-goals {
     font-family: ArialMT;
@@ -369,26 +330,21 @@ article.article-goals h2 {
     margin-top: 39px;
     margin-bottom: 2px;
     padding-bottom: 17px;
+    border-bottom: 1px solid #00a7fb;
     font-size: 28px;
     font-weight: normal;
-    border-bottom: 1px solid #00a7fb;
-
 }
 
-.article-goals img {
-
-}
 .article-goals h3 {
+    margin-top: 19px;
+    margin-bottom: -3px;
     font-size: 19px;
     font-weight: normal;
     color: #03a7fe;
-    margin-top: 19px;
-    margin-bottom: -3px;
 }
 
+/*-----------------MAIN section tab companies-------------------------------------------*/
 
-
-/*-----------------MAIN section companies-------------------------------------------*/
 .content h2 {
     margin: 37px 0 8px 0;
     font-family: Arial;
@@ -396,53 +352,47 @@ article.article-goals h2 {
     font-weight: 400;
 }
 
-
 .section-companies {
     margin-bottom: 20px;
     border-top: 1px solid #00a7fb;
     font-family: Arial;
     font-size: 12px;
     font-weight: 400;
-    
 }
 
 .section-companies img {
     float: left;
     margin: 18px 0 0 13px;
-
 }
+
 .section-companies h3 {
 
     margin: 10px 0 8px 133px;
-    color: #03a7fe;
     font-family: Arial;
     font-size: 22px;
     font-weight: 400;
-    
+    color: #03a7fe;
 }
 
 .section-companies a {
     text-decoration: none;
     color: #13a7f5;
 }
+
 .section-companies a:hover {
     text-decoration: underline;
 }
-
 
 .section-companies dl {
     float: right;
     width: 393px;
     margin: 0;
-    
 }
+
 .section-companies dt,
 .section-companies dd {
-    /*border: 1px solid black;*/
     padding: 6px 0 5px 0;
     background-color: #dfe5e6;
-
-    /*display: block;*/
 }
 
 .section-companies dt {
@@ -452,14 +402,15 @@ article.article-goals h2 {
 }
 
 .section-companies dt:nth-of-type(even),
-.section-companies dd:nth-of-type(even){
+.section-companies dd:nth-of-type(even) {
     background-color: #eceff1;
 }
 
 .section-companies dt:nth-last-of-type(n+6),
-.section-companies dd:nth-last-of-type(n+6){
-    background-color: #dfe5e6;
+.section-companies dd:nth-last-of-type(n+6) {
     border-bottom: 3px solid white;
+    background-color: #dfe5e6;
+
 }
 
 .section-companies dd:nth-last-of-type(4) {
@@ -470,23 +421,19 @@ article.article-goals h2 {
 
 }
 
-
 .section-companies dd:nth-last-of-type(3) {
     margin-left: 226px;
     padding-left: 20px;
     background: url("../pic/companies-icon-skype.png") no-repeat left;
     background-color: #dfe5e6; /*IE fix*/
 
-
 }
-
 
 .section-companies dd:nth-last-of-type(2) {
     margin-left: 226px;
     padding-left: 20px;
     background: url("../pic/companies-icon-email.png") no-repeat left;
     background-color: #eceff1; /*IE fix*/
-
 
 }
 
@@ -498,37 +445,29 @@ article.article-goals h2 {
 
 }
 
-
-
-
-
-
 /*----------------footer------------------------------------------------*/
 footer {
-    border-top: 1px solid #b5b5b7;
     margin-bottom: 20px;
+    border-top: 1px solid #b5b5b7;
 }
 
 footer div {
     width: 478px;
     float: right;
-    padding: 6px 10px 6px 12px;
     margin-right: 25px;
-    background-color: #d9dada;
-    /*margin: 10px 0;*/
+    padding: 6px 10px 6px 12px;
     border-bottom-right-radius: 13px;
     border-bottom-left-radius: 13px;
-
+    background-color: #d9dada;
 }
 
-footer span{
-
-
+footer span {
     font-family: Arial;
     font-size: 10px;
     font-weight: 400;
     color: #78797b;
 }
+
 footer span a {
     color: black;
     text-decoration: none;
@@ -541,11 +480,4 @@ footer a:hover {
 footer img {
     float: right;
     display: block;
-
-
 }
-
-
-/*----------------*/
-
-/*   http://htmler.ru/2014/10/21/css-transition-css3/     background gray-> color    */
