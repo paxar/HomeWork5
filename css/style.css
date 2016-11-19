@@ -300,11 +300,18 @@ article.article-home h2 {
     color: #3f61ff;
 }
 
-.article-home-header {
+ul.article-home-header {
+    margin: 0;
     margin-bottom: 19px;
+    padding: 0;
 }
 
-.article-home-header-date {
+.article-home-header li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.article-home-header li:last-child {
     float: right;
 }
 
