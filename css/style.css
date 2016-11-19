@@ -29,7 +29,6 @@
 .wrapper {
     width: 1200px;
     margin: 0 auto;
-    /*border: 1px dotted green;*/
     background: linear-gradient(to bottom, #ced8d9 0%, #e4e9ea 6%, #ffffff 36%, #ffffff 100%);
 
 }
@@ -278,7 +277,6 @@ li.nav-main {
     padding: 0;
     font-family: ArialMT;
     font-size: 13px;
-    font-weight: normal;
     line-height: 17px;
 
 }
@@ -290,6 +288,15 @@ article.article-home h2 {
     border-bottom: 1px solid #00a7fb;
     font-size: 28px;
     font-weight: normal;
+}
+
+.article-home h2 a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.article-home h2 a:hover {
+    color: #13a7f5;
 }
 
 .article-home a {
@@ -328,7 +335,6 @@ ul.article-home-header {
 .article-goals {
     font-family: ArialMT;
     font-size: 14px;
-    font-weight: normal;
     line-height: 19px;
     text-align: justify;
 }
