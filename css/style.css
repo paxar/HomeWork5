@@ -155,7 +155,7 @@ footer {
     border-bottom: 1px solid #939598;
 }
 
-li.active-tab {
+.nav li.active-tab {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.99) 0%, rgba(255, 255, 255, 1) 9%, rgba(255, 255, 255, 0.92) 23%, rgba(255, 255, 255, 0.67) 62%, rgba(255, 255, 255, 0.08) 91%, rgba(255, 255, 255, 0.01) 100%);
     border-bottom-color: #E9EDEE;
 }
@@ -164,11 +164,11 @@ li.active-tab a {
     color: #45b8fb;
 }
 
-li.nav-main {
+.nav li:first-child {
     border-top-left-radius: 23px;
 }
 
-.nav-companies {
+.nav li:last-child {
     border-top-right-radius: 23px;
 }
 
@@ -178,9 +178,11 @@ li.nav-main {
     list-style: none;
 }
 
-.nav-main,
+/*.nav-main,
 .nav-goals,
-.nav-companies {
+.nav-companies*/
+.nav li
+{
     /* todo а если бы не писал классы, то селекторбыл бы поменьше. Тут же общие стиля */
     width: 130px;
     display: inline-block;
