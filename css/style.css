@@ -55,7 +55,7 @@ footer {
     margin: 0 auto;
 }
 
-aside {/* todo на всякий случай лучше было бы прописать поклассу это, у тебя же могут быть еще такие блоки*/
+.sidebar {/* на всякий случай лучше было бы прописать поклассу это, у тебя же могут быть еще такие блоки    FIXED*/
     float: left;
     width: 230px;
 }
@@ -86,7 +86,7 @@ aside {/* todo на всякий случай лучше было бы проп�
 .auth a {
     display: block;
     margin-top: 18px;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-style: normal;
     font-size: 11px;
     text-decoration: none;
@@ -132,7 +132,7 @@ aside {/* todo на всякий случай лучше было бы проп�
     width: 120px;
     display: block;
     margin-top: 15px;
-    font-family: AFKlampenborg;/* todo  не забывай указывать еще семейство шрифтов */
+    font-family: AFKlampenborg, serif;/*  не забывай указывать еще семейство шрифтов   FIXED */
     font-size: 21px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -144,7 +144,7 @@ aside {/* todo на всякий случай лучше было бы проп�
     float: right;
     margin-top: 18px;
     margin-right: 27px;
-    font-family: Helios;
+    font-family: Helios, serif;
     font-size: 15px;
     font-weight: bold;
     color: #646464;
@@ -193,7 +193,7 @@ li.nav-main {
 
 .nav a {
     padding: 10px;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
     text-decoration: none;
@@ -210,7 +210,7 @@ li.nav-main {
 
 .sidebar h2 {
     margin: 22px 0;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 20px;
     font-weight: 400;
     color: #03a7fe;
@@ -241,7 +241,7 @@ li.nav-main {
 }
 
 .sidebar li a {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 32px;
@@ -285,7 +285,7 @@ li.nav-main {
 
 .article-home {
     padding: 0;
-    font-family: ArialMT;
+    font-family: ArialMT, sans-serif;
     font-size: 13px;
     line-height: 17px;
 
@@ -343,7 +343,7 @@ ul.article-home-header {
 /*-----------------MAIN  article tab goals--------------------------------*/
 
 .article-goals {
-    font-family: ArialMT;
+    font-family: ArialMT, sans-serif;
     font-size: 14px;
     line-height: 19px;
     text-align: justify;
@@ -370,7 +370,7 @@ article.article-goals h2 { /* todo а зачем тут такой селект�
 
 .content h2 {
     margin: 37px 0 8px 0;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 26px;
     font-weight: 400;
 }
@@ -378,7 +378,7 @@ article.article-goals h2 { /* todo а зачем тут такой селект�
 .section-companies {
     margin-bottom: 20px;
     border-top: 1px solid #00a7fb;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 12px;
     font-weight: 400;
 }
@@ -391,7 +391,7 @@ article.article-goals h2 { /* todo а зачем тут такой селект�
 .section-companies h3 {
 
     margin: 10px 0 8px 133px;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 22px;
     font-weight: 400;
     color: #03a7fe;
@@ -424,7 +424,7 @@ article.article-goals h2 { /* todo а зачем тут такой селект�
     padding-left: 7px;
 }
 
-.section-companies dt:nth-of-type(even),
+/*.section-companies dt:nth-of-type(even),*/
 .section-companies dd:nth-of-type(even) {
     background-color: #eceff1;
 }
@@ -436,39 +436,37 @@ article.article-goals h2 { /* todo а зачем тут такой селект�
 
 }
 
-.section-companies dd:nth-last-of-type(4) {
+dd.section-companies-phone {
     margin-left: 0;
     padding-left: 246px;
     background: url("../pic/companies-icon-phone.png") no-repeat left;
     background-color: #eceff1; /*IE fix*/
     background-position-x: 226px
-
-
 }
 
-.section-companies dd:nth-last-of-type(3) {
-    /* todo это уже костыли, лучше добавить конкретно класс да и все*/
-    margin-left: 226px;
-    padding-left: 20px;
+dd.section-companies-skype {
+    /* это уже костыли, лучше добавить конкретно класс да и все FIXED*/
+    margin-left: 0;
+    padding-left: 246px;
     background: url("../pic/companies-icon-skype.png") no-repeat left;
     background-color: #dfe5e6; /*IE fix*/
-
+    background-position-x: 226px
 }
 
-.section-companies dd:nth-last-of-type(2) {
-    margin-left: 226px;
-    padding-left: 20px;
+dd.section-companies-email {
+    margin-left: 0;
+    padding-left: 246px;
     background: url("../pic/companies-icon-email.png") no-repeat left;
     background-color: #eceff1; /*IE fix*/
-
+    background-position-x: 226px
 }
 
-.section-companies dd:nth-last-of-type(1) {
-    margin-left: 226px;
-    padding-left: 20px;
+dd.section-companies-twitter {
+    margin-left: 0;
+    padding-left: 246px;
     background: url("../pic/companies-icon-twitter.png") no-repeat left;
     background-color: #dfe5e6; /*IE fix*/
-
+    background-position-x: 226px
 }
 
 /*----------------footer------------------------------------------------*/
@@ -489,7 +487,7 @@ footer div {
 
 footer span {
     /* todo слишком обобщаешь, в этой домашке норм, но знай на будущее*/
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 10px;
     font-weight: 400;
     color: #78797b;
