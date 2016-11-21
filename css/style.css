@@ -70,6 +70,8 @@ footer {
 /*----------------header-auth----------------------*/
 .auth {
     margin-bottom: 23px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .auth ul {
@@ -122,6 +124,11 @@ footer {
 }
 
 /*----------- header + logotype+ slogan + h1-------------- */
+
+.logo {
+    width:100%;
+    overflow: hidden;
+}
 
 .logo img {
     float: left;
@@ -178,12 +185,9 @@ li.active-tab a {
     list-style: none;
 }
 
-/*.nav-main,
-.nav-goals,
-.nav-companies*/
 .nav li
 {
-    /* todo а если бы не писал классы, то селекторбыл бы поменьше. Тут же общие стиля */
+    /* а если бы не писал классы, то селекторбыл бы поменьше. Тут же общие стиля  FIXED */
     width: 130px;
     display: inline-block;
     margin-left: -1px;
@@ -207,7 +211,9 @@ li.active-tab a {
 }
 
 /*----------------------------------------MAIN-------------------------------------------*/
-
+.main {
+    overflow: hidden;
+}
 /*------------------------sidebar------------------------------*/
 
 .sidebar h2 {
@@ -357,7 +363,7 @@ ul.article-home-header {
     text-align: justify;
 }
 
-article.article-goals h2 { /* todo а зачем тут такой селектор?  */
+article.article-goals h2 { /* todo а зачем тут такой селектор? - пеhебиваю селектор на строке 385 но надо переделать  */
     margin-top: 39px;
     margin-bottom: 2px;
     padding-bottom: 17px;
@@ -478,12 +484,16 @@ dd.section-companies-twitter {
 }
 
 /*----------------footer------------------------------------------------*/
-footer {
+.footer {
+    overflow: hidden;
+}
+
+.footer {
     margin-bottom: 20px;
     border-top: 1px solid #b5b5b7;
 }
 
-footer div {
+.footer div {
     width: 478px;
     float: right;
     margin-right: 25px;
@@ -493,25 +503,24 @@ footer div {
     background-color: #d9dada;
 }
 
-footer span {
-    /* todo слишком обобщаешь, в этой домашке норм, но знай на будущее*/
+.footer span {
+    /* слишком обобщаешь, в этой домашке норм, но знай на будущее    FIXED*/
     font-family: Arial, sans-serif;
     font-size: 10px;
     font-weight: 400;
     color: #78797b;
 }
 
-footer span a {
+.footer span a {
     color: black;
     text-decoration: none;
 }
 
-footer a:hover {
+.footer a:hover {
     color: #45b8fb;
 }
 
-footer img {
+.footer img {
     float: right;
-    /* todo я говорил об этом. Флоат делает блочным элемент*/
-    display: block;
+    /* я говорил об этом. Флоат делает блочным элемент   FIXED:-)   */
 }
