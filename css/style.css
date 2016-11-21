@@ -223,26 +223,26 @@ li.active-tab a {
     content: url("../pic/arrow-down.png");
 }
 
-.sidebar ul {
+.sidebar-nav {
     padding-left: 0;
 }
 
-.sidebar li {
+.sidebar-nav li {
     display: block;
     border-bottom: 1px solid #c3c4c3;
 }
 
-.sidebar li::before {
+.sidebar-nav li::before {
     padding-right: 10px;
     /* todo лучше это сделать через background-image  */
     content: url("../pic/arrow.png");
 }
 
-.sidebar li:last-child {
+.sidebar-nav li:last-child {
     border-bottom: none;
 }
 
-.sidebar li a {
+.sidebar-nav li a {
     font-family: Arial, sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -251,8 +251,14 @@ li.active-tab a {
     color: #555;
 }
 
-.sidebar li a:hover {
+.sidebar-nav li a:hover {
     color: #45b8fb;
+}
+
+.sidebar-partners {
+    padding: 0;
+    margin-bottom: 117px;
+    list-style-type: none;
 }
 
 .rss {
@@ -262,14 +268,14 @@ li.active-tab a {
     border-bottom: 1px solid #c3c4c3;
 }
 
-.sidebar .rss img {
+.sidebar-partners .rss img {
     margin: 15px auto;
     filter: none;
 }
 
-.sidebar a img {
+.sidebar-partners a img {
     display: block;
-    margin: 23px auto;
+    margin: 31px auto;
     filter: grayscale(100%);
     /* todo не уверен, что ты проверял в разных браузерах это  */
     /*transition test*/
@@ -277,7 +283,7 @@ li.active-tab a {
     /* это хорошо*/
 }
 
-.sidebar a img:hover {
+.sidebar-partners a img:hover {
     filter: none;
 }
 

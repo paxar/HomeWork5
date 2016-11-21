@@ -7,7 +7,8 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div class="wrapper"><!-- никогда не вешай фон на враппер, фон только на боди, а то у меня видны белые границы уже   FIXED-->
+        <div class="wrapper">
+            <!-- никогда не вешай фон на враппер, фон только на боди, а то у меня видны белые границы уже   FIXED-->
             <header>
                 <div class="auth clearfix">
                     <ul>
@@ -26,16 +27,17 @@
                         <li class="active-tab"><a href="index.html">главная</a>
                         <li><a href="goals.html">цель проекта</a>
                         <li><a href="companies.html">компании</a>
-                        <!-- на пункты меню лучше не вешать классы по содержимому FIXED -->
+                            <!-- на пункты меню лучше не вешать классы по содержимому FIXED -->
                     </ul>
                 </nav>
             </header>
 
-            <main class="clearfix"><!-- todo у тебя очень много clearfix, без них можно обойтись всегда, подумай как и почитай и методах очистки потока -->
+            <main class="clearfix">
+                <!-- todo у тебя очень много clearfix, без них можно обойтись всегда, подумай как и почитай и методах очистки потока -->
 
                 <aside class="sidebar">
                     <h2>Категории</h2>
-                    <ul>
+                    <ul class="sidebar-nav">
                         <li><a href="#">CMS</a></li>
                         <li><a href="#">Design Patterns</a></li>
                         <li><a href="#">CMS</a></li>
@@ -54,21 +56,23 @@
                         <li><a href="#">Design Patterns</a></li>
                     </ul>
 
-
-                    <a class="rss" href="#"><img src="pic/rss_03.png" alt="RSS"></a>
-                    <a href="#"><img src="pic/master-of-code_color.png" alt="master of code"></a>
-                    <a href="#"><img src="pic/formapro-color.png" alt="formapro"></a>
-                    <!-- todo тут же тоже список с партнерами-->
-                    <a href="#"><img src="pic/interlink-color.png" alt="interlink"></a>
-                    <a href="#"><img src="pic/webstudio-color.png" alt="web-shop"></a>
-                    <a href="#"><img src="pic/artsofte-color.png" alt="artsofte"></a>
+                    <!-- тут же тоже список с партнерами   fixed-->
+                    <ul class="sidebar-partners">
+                        <li><a class="rss" href="#"><img src="pic/rss_03.png" alt="RSS"></a></li>
+                        <li><a href="#"><img src="pic/master-of-code_color.png" alt="master of code"></a></li>
+                        <li><a href="#"><img src="pic/formapro-color.png" alt="formapro"></a></li>
+                        <li><a href="#"><img src="pic/interlink-color.png" alt="interlink"></a></li>
+                        <li><a href="#"><img src="pic/webstudio-color.png" alt="web-shop"></a></li>
+                        <li><a href="#"><img src="pic/artsofte-color.png" alt="artsofte"></a></li>
+                    </ul>
 
                 </aside>
 
                 <section class="content">    <!--in section add different contents  pages  -->
-                <!-- вот тут супер -->
+                    <!-- вот тут супер -->
 
-                    <article class="article-home"><!-- todo ты привязался к странице, можно было назвать что-то типа .entry -->
+                    <article class="article-home">
+                        <!-- todo ты привязался к странице, можно было назвать что-то типа .entry -->
                         <h2><a href="#">Кризис и IT</a></h2>
                         <!-- todo ну тут дальше типа .entry-header и тд-->
                         <ul class="article-home-header">
