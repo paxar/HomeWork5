@@ -26,11 +26,16 @@
 }
 
 /*-----------------------initial settings page -------------------------------*/
+body {
+    background: linear-gradient(to bottom, #ced8d9 0%, #e4e9ea 6%, #ffffff 36%, #ffffff 100%);
+}
+
+
 .wrapper {
     width: 1200px;
     margin: 0 auto;
-    background: linear-gradient(to bottom, #ced8d9 0%, #e4e9ea 6%, #ffffff 36%, #ffffff 100%);
-    /* об этом написал в index.html */
+
+    /* об этом написал в index.html   FIXED */
 
 }
 
@@ -50,7 +55,7 @@ footer {
     margin: 0 auto;
 }
 
-aside {/* на всякий случай лучше было бы прописать поклассу это, у тебя же могут быть еще такие блоки*/
+aside {/* todo на всякий случай лучше было бы прописать поклассу это, у тебя же могут быть еще такие блоки*/
     float: left;
     width: 230px;
 }
@@ -127,7 +132,7 @@ aside {/* на всякий случай лучше было бы прописа
     width: 120px;
     display: block;
     margin-top: 15px;
-    font-family: AFKlampenborg;/* не забывай указывать еще семейство шрифтов */
+    font-family: AFKlampenborg;/* todo  не забывай указывать еще семейство шрифтов */
     font-size: 21px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -176,7 +181,7 @@ li.nav-main {
 .nav-main,
 .nav-goals,
 .nav-companies {
-    /* а если бы не писал классы, то селекторбыл бы поменьше. Тут же общие стиля */
+    /* todo а если бы не писал классы, то селекторбыл бы поменьше. Тут же общие стиля */
     width: 130px;
     display: inline-block;
     margin-left: -1px;
@@ -227,7 +232,7 @@ li.nav-main {
 
 .sidebar li::before {
     padding-right: 10px;
-    /* лучше это сделать через background-image  */
+    /* todo лучше это сделать через background-image  */
     content: url("../pic/arrow.png");
 }
 
@@ -264,7 +269,7 @@ li.nav-main {
     display: block;
     margin: 23px auto;
     filter: grayscale(100%);
-    /* не уверен, что ты проверял в разных браузерах это  */
+    /* todo не уверен, что ты проверял в разных браузерах это  */
     /*transition test*/
     transition: all 0.7s;
     /* это хорошо*/
@@ -344,7 +349,7 @@ ul.article-home-header {
     text-align: justify;
 }
 
-article.article-goals h2 { /*а зачем тут такой селектор?  */
+article.article-goals h2 { /* todo а зачем тут такой селектор?  */
     margin-top: 39px;
     margin-bottom: 2px;
     padding-bottom: 17px;
@@ -432,15 +437,17 @@ article.article-goals h2 { /*а зачем тут такой селектор?  
 }
 
 .section-companies dd:nth-last-of-type(4) {
-    margin-left: 226px;
-    padding-left: 20px;
+    margin-left: 0;
+    padding-left: 246px;
     background: url("../pic/companies-icon-phone.png") no-repeat left;
     background-color: #eceff1; /*IE fix*/
+    background-position-x: 226px
+
 
 }
 
 .section-companies dd:nth-last-of-type(3) {
-    /* это уже костыли, лучше добавить конкретно класс да и все*/
+    /* todo это уже костыли, лучше добавить конкретно класс да и все*/
     margin-left: 226px;
     padding-left: 20px;
     background: url("../pic/companies-icon-skype.png") no-repeat left;
@@ -481,7 +488,7 @@ footer div {
 }
 
 footer span {
-    /* слишком обобщаешь, в этой домашке норм, но знай на будущее*/
+    /* todo слишком обобщаешь, в этой домашке норм, но знай на будущее*/
     font-family: Arial;
     font-size: 10px;
     font-weight: 400;
@@ -499,6 +506,6 @@ footer a:hover {
 
 footer img {
     float: right;
-    /* я говорил об этом. Флоат делает блочным элемент*/
+    /* todo я говорил об этом. Флоат делает блочным элемент*/
     display: block;
 }
