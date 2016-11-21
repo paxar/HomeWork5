@@ -29,8 +29,8 @@
 .wrapper {
     width: 1200px;
     margin: 0 auto;
-    /*border: 1px dotted green;*/
     background: linear-gradient(to bottom, #ced8d9 0%, #e4e9ea 6%, #ffffff 36%, #ffffff 100%);
+    /* об этом написал в index.html */
 
 }
 
@@ -50,7 +50,7 @@ footer {
     margin: 0 auto;
 }
 
-aside {
+aside {/* на всякий случай лучше было бы прописать поклассу это, у тебя же могут быть еще такие блоки*/
     float: left;
     width: 230px;
 }
@@ -127,7 +127,7 @@ aside {
     width: 120px;
     display: block;
     margin-top: 15px;
-    font-family: AFKlampenborg;
+    font-family: AFKlampenborg;/* не забывай указывать еще семейство шрифтов */
     font-size: 21px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -176,6 +176,7 @@ li.nav-main {
 .nav-main,
 .nav-goals,
 .nav-companies {
+    /* а если бы не писал классы, то селекторбыл бы поменьше. Тут же общие стиля */
     width: 130px;
     display: inline-block;
     margin-left: -1px;
@@ -226,6 +227,7 @@ li.nav-main {
 
 .sidebar li::before {
     padding-right: 10px;
+    /* лучше это сделать через background-image  */
     content: url("../pic/arrow.png");
 }
 
@@ -262,8 +264,10 @@ li.nav-main {
     display: block;
     margin: 23px auto;
     filter: grayscale(100%);
+    /* не уверен, что ты проверял в разных браузерах это  */
     /*transition test*/
     transition: all 0.7s;
+    /* это хорошо*/
 }
 
 .sidebar a img:hover {
@@ -278,7 +282,6 @@ li.nav-main {
     padding: 0;
     font-family: ArialMT;
     font-size: 13px;
-    font-weight: normal;
     line-height: 17px;
 
 }
@@ -292,6 +295,15 @@ article.article-home h2 {
     font-weight: normal;
 }
 
+.article-home h2 a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.article-home h2 a:hover {
+    color: #13a7f5;
+}
+
 .article-home a {
     color: #13a7f5;
 }
@@ -300,11 +312,18 @@ article.article-home h2 {
     color: #3f61ff;
 }
 
-.article-home-header {
+ul.article-home-header {
+    margin: 0;
     margin-bottom: 19px;
+    padding: 0;
 }
 
-.article-home-header-date {
+.article-home-header li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.article-home-header li:last-child {
     float: right;
 }
 
@@ -321,12 +340,11 @@ article.article-home h2 {
 .article-goals {
     font-family: ArialMT;
     font-size: 14px;
-    font-weight: normal;
     line-height: 19px;
     text-align: justify;
 }
 
-article.article-goals h2 {
+article.article-goals h2 { /*а зачем тут такой селектор?  */
     margin-top: 39px;
     margin-bottom: 2px;
     padding-bottom: 17px;
@@ -422,6 +440,7 @@ article.article-goals h2 {
 }
 
 .section-companies dd:nth-last-of-type(3) {
+    /* это уже костыли, лучше добавить конкретно класс да и все*/
     margin-left: 226px;
     padding-left: 20px;
     background: url("../pic/companies-icon-skype.png") no-repeat left;
@@ -462,6 +481,7 @@ footer div {
 }
 
 footer span {
+    /* слишком обобщаешь, в этой домашке норм, но знай на будущее*/
     font-family: Arial;
     font-size: 10px;
     font-weight: 400;
@@ -479,5 +499,6 @@ footer a:hover {
 
 footer img {
     float: right;
+    /* я говорил об этом. Флоат делает блочным элемент*/
     display: block;
 }

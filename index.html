@@ -7,8 +7,7 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div class="wrapper">
-
+        <div class="wrapper"><!-- никогда не вешай фон на враппер, фон только на боди, а то у меня видны белые границы уже-->
             <header>
                 <div class="auth clearfix">
                     <ul>
@@ -16,21 +15,23 @@
                         <li class="auth-register"><a href="#">регистрация</a></li>
                     </ul>
                 </div>
-                <div class="logo clearfix">
+                <div class="logo clearfix"><!-- тут лучше вобще всю внутренность запихнуть в h1-->
                     <a href="#"><img src="pic/logo.png" alt="Logo"></a>
                     <span class="slogan">managers to managers</span>
-                    <h1>Сообщество IT-компаний города Черкассы</h1>
+
+                    <h1>Сообщество IT-компаний города Черкассы</h1><!-- тут поменьше заголовок -->
                 </div>
                 <nav class="nav clearfix">
                     <ul>
                         <li class="nav-main active-tab"><a href="index.html">главная</a>
                         <li class="nav-goals"><a href="goals.html">цель проекта</a>
+                        <!-- на пункты меню лучше не вешать классы по содержимому -->
                         <li class="nav-companies"><a href="companies.html">компании</a>
                     </ul>
                 </nav>
             </header>
 
-            <main class="clearfix">
+            <main class="clearfix"><!-- у тебя очень много clearfix, без них можно обойтись всегда, подумай как и почитай и методах очистки потока -->
 
                 <aside class="sidebar">
                     <h2>Категории</h2>
@@ -52,9 +53,12 @@
                         <li><a href="#">CMS</a></li>
                         <li><a href="#">Design Patterns</a></li>
                     </ul>
+
+
                     <a class="rss" href="#"><img src="pic/rss_03.png" alt="RSS"></a>
                     <a href="#"><img src="pic/master-of-code_color.png" alt="master of code"></a>
                     <a href="#"><img src="pic/formapro-color.png" alt="formapro"></a>
+                    <!-- тут же тоже список с партнерами-->
                     <a href="#"><img src="pic/interlink-color.png" alt="interlink"></a>
                     <a href="#"><img src="pic/webstudio-color.png" alt="web-shop"></a>
                     <a href="#"><img src="pic/artsofte-color.png" alt="artsofte"></a>
@@ -62,18 +66,47 @@
                 </aside>
 
                 <section class="content">    <!--in section add different contents  pages  -->
+                <!-- вот тут супер -->
+
+                    <article class="article-home"><!-- ты привязался к странице, можно было назвать что-то типа .entry -->
+                        <h2><a href="#">Кризис и IT</a></h2>
+                        <!-- ну тут дальше типа .entry-header и тд-->
+                        <ul class="article-home-header">
+                            <li>Автор:</li>
+                            <!-- элементы не равносильны, так что список не подходит  -->
+                            <li><a href="#">Руслан Пилин</a></li>
+                            <li>Категории:</li>
+                            <li><a href="#">Рынок труда</a>,</li>
+                            <li><a href="#">Дзен</a></li>
+                            <li>28 марта 2009</li>
+                        </ul>
+                        <p>Уже, наверное, пол года все орут "мировой финансовый кризис",
+                            но мало кто четко представляет что это такое и что нас ждет впереди.
+                            С моей стороны события в России выглядели как падение основных биржевых индексов.
+                            Следовательно, часть населения у кого были деньги в акциях и облигациях прилично потеряли,
+                            если не успели из них вовремя выйти. С другой стороны появились возможности эти и другие
+                            активы дешево откупить. Потом кризис перекинулся на реальный сектор и компания, в которой
+                            я тогда работал недосчиталась значительной части доходов и начали панически сокращать
+                            расходы.
+                            <a href="#">Читать далее &raquo;&raquo;</a>
+                            <!-- лучше сделать те стрелочки стилями -->
+                        </p>
+                        <div class="article-home-footer">
+                            <img src="pic/dots.png" alt="dots">
+                            <span>3 голосов <a href="#">24 комментария &raquo;</a></span>
+                        </div>
+                    </article>
 
                     <article class="article-home">
-                        <h2>Кризис и IT</h2>
-                        <div class="article-home-header">
-                            Автор:
-                            <a href="#">Руслан Пилин</a>
-                            Категории:
-                            <a href="#">Рынок труда</a>
-                            ,
-                            <a href="#">Дзен</a>
-                            <span class="article-home-header-date">28 марта 2009</span>
-                        </div>
+                        <h2><a href="#">Кризис и IT</a></h2>
+                        <ul class="article-home-header">
+                            <li>Автор:</li>
+                            <li><a href="#">Руслан Пилин</a></li>
+                            <li>Категории:</li>
+                            <li><a href="#">Рынок труда</a>,</li>
+                            <li><a href="#">Дзен</a></li>
+                            <li>28 марта 2009</li>
+                        </ul>
                         <p>Уже, наверное, пол года все орут "мировой финансовый кризис",
                             но мало кто четко представляет что это такое и что нас ждет впереди.
                             С моей стороны события в России выглядели как падение основных биржевых индексов.
@@ -91,43 +124,15 @@
                     </article>
 
                     <article class="article-home">
-                        <h2>Кризис и IT</h2>
-                        <div class="article-home-header">
-                            Автор:
-                            <a href="#">Руслан Пилин</a>
-                            Категории:
-                            <a href="#">Рынок труда</a>
-                            ,
-                            <a href="#">Дзен</a>
-                            <span class="article-home-header-date">28 марта 2009</span>
-                        </div>
-                        <p>Уже, наверное, пол года все орут "мировой финансовый кризис",
-                            но мало кто четко представляет что это такое и что нас ждет впереди.
-                            С моей стороны события в России выглядели как падение основных биржевых индексов.
-                            Следовательно, часть населения у кого были деньги в акциях и облигациях прилично потеряли,
-                            если не успели из них вовремя выйти. С другой стороны появились возможности эти и другие
-                            активы дешево откупить. Потом кризис перекинулся на реальный сектор и компания, в которой
-                            я тогда работал недосчиталась значительной части доходов и начали панически сокращать
-                            расходы.
-                            <a href="#">Читать далее &raquo;&raquo;</a>
-                        </p>
-                        <div class="article-home-footer">
-                            <img src="pic/dots.png" alt="dots">
-                            <span>3 голосов <a href="#">24 комментария &raquo;</a></span>
-                        </div>
-                    </article>
-
-                    <article class="article-home">
-                        <h2>Кризис и IT</h2>
-                        <div class="article-home-header">
-                            Автор:
-                            <a href="#">Руслан Пилин</a>
-                            Категории:
-                            <a href="#">Рынок труда</a>
-                            ,
-                            <a href="#">Дзен</a>
-                            <span class="article-home-header-date">28 марта 2009</span>
-                        </div>
+                        <h2><a href="#">Кризис и IT</a></h2>
+                        <ul class="article-home-header">
+                            <li>Автор:</li>
+                            <li><a href="#">Руслан Пилин</a></li>
+                            <li>Категории:</li>
+                            <li><a href="#">Рынок труда</a>,</li>
+                            <li><a href="#">Дзен</a></li>
+                            <li>28 марта 2009</li>
+                        </ul>
                         <p>Уже, наверное, пол года все орут "мировой финансовый кризис",
                             но мало кто четко представляет что это такое и что нас ждет впереди.
                             С моей стороны события в России выглядели как падение основных биржевых индексов.
@@ -160,3 +165,5 @@
         </div> <!--END wrapper-->
     </body>
 </html>
+
+<!-- хорошо, но нужно избавиться от избытка clearfix -->
