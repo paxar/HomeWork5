@@ -80,7 +80,8 @@ footer {
 
 .auth li {
     float: right;
-    margin-top: -14px;
+    position: relative;
+    top: -14px;
     padding-bottom: 7px;
     list-style: none;
 }
@@ -129,6 +130,9 @@ footer {
     width:100%;
     overflow: hidden;
 }
+.logo h1 {
+    overflow: hidden;
+}
 
 .logo img {
     float: left;
@@ -147,7 +151,7 @@ footer {
     color: #939598;
 }
 
-.logo h1 {
+.logo h2 {
     float: right;
     margin-top: 18px;
     margin-right: 27px;
@@ -484,11 +488,9 @@ dd.section-companies-twitter {
 }
 
 /*----------------footer------------------------------------------------*/
-.footer {
-    overflow: hidden;
-}
 
 .footer {
+    overflow: hidden;
     margin-bottom: 20px;
     border-top: 1px solid #b5b5b7;
 }
