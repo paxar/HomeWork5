@@ -328,17 +328,12 @@ article.article-main h2 {
 
 .article-main a {
     color: #13a7f5;
-    /*background: url("../pic/double-right-arrow.png") right no-repeat;*/
+
 }
 
 .article-main a:hover {
     color: #3f61ff;
 }
-
-.article-main a:after {
-    background: url("../pic/double-right-arrow.png");
-}
-
 
 
 ul.article-main-header {
@@ -347,13 +342,19 @@ ul.article-main-header {
     padding: 0;
 }
 
-.article-main-header li {
-    display: inline-block;
-    list-style-type: none;
+
+.article-main-header span {
+    float: right;
 }
 
-.article-main-header li:last-child {
-    float: right;
+.article-main-link-more:after {
+    /*content: "\00A0 \00BB \00BB";*/
+    padding-left: 5px;
+    content: "";
+    background: url("../pic/double-right-arrow.png") right no-repeat;
+    width: 13px;
+    height: 6px;
+    display: inline-block;
 }
 
 .article-main-footer {
@@ -362,6 +363,15 @@ ul.article-main-header {
 
 .article-main-footer img {
     vertical-align: text-top;
+}
+.article-main-footer a:after {
+    /*content: "\00A0 \00BB";*/
+    padding-left: 5px;
+    content: "";
+    background: url("../pic/right-arrow.png") right no-repeat;
+    width: 5px;
+    height: 6px;
+    display: inline-block;
 }
 
 /*-----------------MAIN  article tab goals--------------------------------*/
