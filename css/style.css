@@ -30,7 +30,6 @@ body {
     background: linear-gradient(to bottom, #ced8d9 0%, #e4e9ea 6%, #ffffff 36%, #ffffff 100%);
 }
 
-
 .wrapper {
     width: 1200px;
     margin: 0 auto;
@@ -47,7 +46,6 @@ body {
 
 /*----------------------------settings page blocks---------------------------------------*/
 
-
 header,
 main,
 footer {
@@ -55,7 +53,7 @@ footer {
     margin: 0 auto;
 }
 
-.sidebar {/* на всякий случай лучше было бы прописать поклассу это, у тебя же могут быть еще такие блоки    FIXED*/
+.sidebar { /* на всякий случай лучше было бы прописать поклассу это, у тебя же могут быть еще такие блоки    FIXED*/
     float: left;
     width: 230px;
 }
@@ -127,9 +125,10 @@ footer {
 /*----------- header + logotype+ slogan + h1-------------- */
 
 .logo {
-    width:100%;
+    width: 100%;
     overflow: hidden;
 }
+
 .logo h1 {
     float: left;
     margin: 0;
@@ -141,10 +140,12 @@ footer {
 
 .slogan {
     float: left;
+    position: relative;
+    left: -4px;
     width: 120px;
     display: block;
     margin-top: 15px;
-    font-family: AFKlampenborg, serif;/*  не забывай указывать еще семейство шрифтов   FIXED */
+    font-family: AFKlampenborg, serif; /*  не забывай указывать еще семейство шрифтов   FIXED */
     font-size: 21px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -190,8 +191,7 @@ li.active-tab a {
     list-style: none;
 }
 
-.nav li
-{
+.nav li {
     /* а если бы не писал классы, то селекторбыл бы поменьше. Тут же общие стиля  FIXED */
     width: 130px;
     display: inline-block;
@@ -219,6 +219,7 @@ li.active-tab a {
 .main {
     overflow: hidden;
 }
+
 /*------------------------sidebar------------------------------*/
 
 .sidebar h2 {
@@ -242,7 +243,7 @@ li.active-tab a {
     display: block;
     border-bottom: 1px solid #c3c4c3;
     padding-left: 19px;
-    background: url("../pic/arrow.png") no-repeat left;  /* лучше это сделать через background-image    FIXED  */
+    background: url("../pic/arrow.png") no-repeat left; /* лучше это сделать через background-image    FIXED  */
 }
 
 .sidebar-nav li:last-child {
@@ -262,12 +263,6 @@ li.active-tab a {
     color: #45b8fb;
 }
 
-.sidebar-partners {
-    padding: 0;
-    margin-bottom: 117px;
-    list-style-type: none;
-}
-
 .rss {
     display: block;
     margin-top: 40px;
@@ -275,16 +270,28 @@ li.active-tab a {
     border-bottom: 1px solid #c3c4c3;
 }
 
-.sidebar-partners .rss img {
+.rss img {
     margin: 15px auto;
-    filter: none;
+    display: block;
+
+}
+
+.sidebar-partners {
+    padding: 0;
+    margin-bottom: 117px;
+    list-style-type: none;
 }
 
 .sidebar-partners a img {
     display: block;
     margin: 31px auto;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
     filter: grayscale(100%);
-    /* todo не уверен, что ты проверял в разных браузерах это  */
+
+    /* не уверен, что ты проверял в разных браузерах это       IE11 не тянет, Dix на занятии сказал "ну и забей на него"  */
     /*transition test*/
     transition: all 0.7s;
     /* это хорошо*/
@@ -324,8 +331,6 @@ article.article-main h2 {
     color: #13a7f5;
 }
 
-
-
 .article-main a {
     color: #13a7f5;
 
@@ -335,13 +340,11 @@ article.article-main h2 {
     color: #3f61ff;
 }
 
-
 ul.article-main-header {
     margin: 0;
     margin-bottom: 19px;
     padding: 0;
 }
-
 
 .article-main-header span {
     float: right;
@@ -364,6 +367,7 @@ ul.article-main-header {
 .article-main-footer img {
     vertical-align: text-top;
 }
+
 .article-main-footer a:after {
     /*content: "\00A0 \00BB";*/
     padding-left: 5px;
@@ -376,14 +380,14 @@ ul.article-main-header {
 
 /*-----------------MAIN  article tab goals--------------------------------*/
 
-.article-goals {
+.article-second {
     font-family: ArialMT, sans-serif;
     font-size: 14px;
     line-height: 19px;
     text-align: justify;
 }
 
-article.article-goals h2 { /* todo а зачем тут такой селектор? - пеhебиваю селектор на строке 385 но надо переделать  */
+.article-second h2 { /* а зачем тут такой селектор? FIXED  */
     margin-top: 39px;
     margin-bottom: 2px;
     padding-bottom: 17px;
@@ -392,7 +396,7 @@ article.article-goals h2 { /* todo а зачем тут такой селект�
     font-weight: normal;
 }
 
-.article-goals h3 {
+.article-second h3 {
     margin-top: 19px;
     margin-bottom: -3px;
     font-size: 19px;
@@ -410,6 +414,7 @@ article.article-goals h2 { /* todo а зачем тут такой селект�
 }
 
 .section-companies {
+    overflow: hidden;
     margin-bottom: 20px;
     border-top: 1px solid #00a7fb;
     font-family: Arial, sans-serif;
@@ -540,5 +545,5 @@ dd.section-companies-twitter {
 
 .footer img {
     float: right;
-    /* я говорил об этом. Флоат делает блочным элемент   FIXED:-)   */
+    /* я говорил об этом. Флоат делает блочным элемент   FIXED :-)   */
 }
